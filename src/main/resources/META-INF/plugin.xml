@@ -1,15 +1,21 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.lauretcoding.thtdfinder</id>
-    <name>th-td-finder</name>
+    <name>Th-Td-Finder</name>
     <vendor>lauretcoding</vendor>
-
+    <version>1.0.0</version>
+    <description>
+        TH-TD Finder is a powerful IntelliJ IDEA plugin that enhances your productivity when working with HTML and Twig templates. Say goodbye to scrolling through long, nested tables — TH-TD Finder lets you instantly navigate from a th (table header) to the corresponding td (table data cell), giving you better context and clarity when editing structured markup. Key Features: Smart Navigation – Hover over any th while holding Ctrl (or Cmd on macOS) to instantly highlight and navigate to its associated td cells. Context-Aware – Handles complex table structures and multiple matching cells with an elegant popup selection UI. Twig Support – Perfectly tailored for developers working with Symfony and Twig, or standard HTML templates. Boost Productivity – Spend less time searching, and more time coding with confidence and precision. Whether you're maintaining legacy templates or building complex layouts, TH-TD Finder is your invisible assistant for cleaner, faster front-end development.
+    </description>
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.lauretcoding.thtdfinder.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.lauretcoding.thtdfinder.startup.MyProjectActivity" />
+        <gotoDeclarationHandler
+                implementation="com.github.lauretcoding.thtdfinder.TdGotoDeclarationHandler"
+                id="tdGotoDeclarationHandler"
+                order="first"/>
+        <gotoDeclarationHandler
+                implementation="com.github.lauretcoding.thtdfinder.ThGotoDeclarationHandler"
+                id="thGotoDeclarationHandler"
+                order="first"/>
+        <editorFactoryListener implementation="com.github.lauretcoding.thtdfinder.CtrlHoverFactoryListener"/>
     </extensions>
 </idea-plugin>
