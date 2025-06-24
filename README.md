@@ -1,39 +1,39 @@
-# TH-TD Navigator
+# Th-Td Finder
 
-**Naviguez instantanément entre vos balises `<th>` et `<td>`** dans vos templates HTML et Twig, sans perdre de temps à chercher !
-
----
-
-## Fonctionnalités
-
-- **Navigation bidirectionnelle rapide :** Passez du `<th>` au `<td>` associé, et inversement, d’un simple survol + touche `Ctrl` (ou `Cmd` sur macOS).
-- **Gestion des correspondances multiples :** Choisissez facilement parmi plusieurs cellules `<td>` liées à un `<th>`.
-- **Support HTML & Twig :** Compatible avec `.html` et `.twig`, idéal pour Symfony et autres projets.
-- **Gain de productivité :** Moins de scroll, plus d’efficacité dans vos templates.
+**Instantly navigate between your `<th>` and `<td>` tags** in your HTML and Twig templates, without wasting time searching!
 
 ---
 
-## Pourquoi utiliser TH-TD Navigator ?
+## Features
 
-Ce plugin agit comme un assistant invisible, vous aidant à mieux visualiser et modifier vos tables complexes en toute simplicité.
+- **Fast bidirectional navigation:** Jump from `<th>` to associated `<td>`, and vice versa, with a simple hover + `Ctrl` key (or `Cmd` on macOS).
+- **Multiple match handling:** Easily choose among several `<td>` cells linked to a `<th>`.
+- **HTML & Twig support:** Compatible with `.html` and `.twig` files, perfect for Symfony and other projects.
+- **Productivity boost:** Less scrolling, more efficiency in your templates.
+
+---
+
+## Why use Th-Td Finder?
+
+This plugin acts as an invisible assistant, helping you better visualize and edit your complex tables with ease.
 
 ---
 
 ## Installation
 
-1. Ouvrez PhpStorm.
-2. Allez dans **Settings → Plugins**.
-3. Recherchez **“TH-TD Navigator”**.
-4. Cliquez sur **Installer**, puis redémarrez PhpStorm.
+1. Open PhpStorm.
+2. Go to **Settings → Plugins**.
+3. Search for **"Th-Td Finder"**.
+4. Click **Install**, then restart PhpStorm.
 
 ---
 
-## Compatibilité
+## Compatibility
 
-PhpStorm 2020.3 et versions supérieures.
+PhpStorm 2020.3 and higher versions.
 
 ---
 
 ## Support & Contributions
 
-Signalez bugs et demandez des fonctionnalités via [GitHub](https://github.com/toncompte/th-td-navigator).
+Report bugs and request features via [GitHub](https://github.com/lauretCoding/th-td-finder/issues).

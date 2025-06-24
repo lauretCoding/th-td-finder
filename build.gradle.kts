@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.lauretcoding"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -18,12 +18,13 @@ dependencies {
 
 intellij {
     version.set("2023.3.6")
-    type.set("PS") // PhpStorm
+    type.set("PS")
     plugins.set(listOf(
         "com.jetbrains.php",
-        "com.jetbrains.twig",  // Ajout du plugin Twig
-        "org.jetbrains.plugins.yaml"  // Souvent nécessaire
+        "com.jetbrains.twig",
+        "org.jetbrains.plugins.yaml"
     ))
+    updateSinceUntilBuild.set(true)
 }
 
 kotlin {
@@ -49,14 +50,21 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("233")
-        untilBuild.set("241.*")
+        untilBuild.set("251.*")
+        changeNotes.set("""
+            <div>✨ First stable version</div>
+            <div>🧭 Navigate between &lt;th&gt; et &lt;td&gt; in Twig</div>
+        """.trimIndent())
     }
 
     runIde {
-        // Configuration pour le debug
         jvmArgs = listOf(
             "-Xmx2048m",
             "-XX:ReservedCodeCacheSize=512m"
         )
+    }
+
+    buildSearchableOptions {
+        enabled = false
     }
 }

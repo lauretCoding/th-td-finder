@@ -1,11 +1,21 @@
 <idea-plugin>
     <id>com.github.lauretcoding.thtdfinder</id>
-    <name>Th-Td-Finder</name>
+    <name>Th-Td Finder</name>
     <vendor>lauretcoding</vendor>
-    <version>1.0.0</version>
-    <description>
-        TH-TD Finder is a powerful IntelliJ IDEA plugin that enhances your productivity when working with HTML and Twig templates. Say goodbye to scrolling through long, nested tables — TH-TD Finder lets you instantly navigate from a th (table header) to the corresponding td (table data cell), giving you better context and clarity when editing structured markup. Key Features: Smart Navigation – Hover over any th while holding Ctrl (or Cmd on macOS) to instantly highlight and navigate to its associated td cells. Context-Aware – Handles complex table structures and multiple matching cells with an elegant popup selection UI. Twig Support – Perfectly tailored for developers working with Symfony and Twig, or standard HTML templates. Boost Productivity – Spend less time searching, and more time coding with confidence and precision. Whether you're maintaining legacy templates or building complex layouts, TH-TD Finder is your invisible assistant for cleaner, faster front-end development.
-    </description>
+    <description><![CDATA[
+    <p><strong>Th-Td Finder</strong> is a powerful IntelliJ IDEA plugin that enhances your productivity when working with Twig templates.</p>
+
+    <p>Say goodbye to scrolling through long, nested tables — this plugin lets you instantly navigate from a <code>&lt;th&gt;</code> (table header) to the corresponding <code>&lt;td&gt;</code> (table data cell), giving you better context and clarity when editing structured markup.</p>
+
+    <ul>
+        <li><strong>Smart Navigation:</strong> Hold <code>Ctrl</code> (or <code>Cmd</code> on macOS) and hover over a <code>&lt;th&gt;</code> to preview and jump to its matching <code>&lt;td&gt;</code>.</li>
+        <li><strong>Context-Aware:</strong> Handles complex tables and multiple matches with a popup selector.</li>
+        <li><strong>Twig Support:</strong> Works in <code>.twig</code> files.</li>
+        <li><strong>Boosted Productivity:</strong> No more scrolling or guessing where the data is—just instant clarity.</li>
+    </ul>
+
+    <p>Perfect for Symfony developers or anyone working with structured tables.</p>
+]]></description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <gotoDeclarationHandler
